@@ -1,0 +1,19 @@
+{
+  "home": {
+    "title": "Ana Sayfa",
+    "description": "Bu, uygulamanın ana sayfasıdır.",
+    "welcomeMessage": "Hoş geldiniz, kullanıcı!",
+    "settingsButton": "Ayarlar",
+    "profileButton": "Profil",
+    "logoutButton": "Çıkış Yap"
+  },
+  "general": {
+   "button": {
+     "save": "Kaydet"
+   },
+    "dialog": {
+      "confirm": "Onayla",
+      "cancel": "İptal"
+    }
+  }
+}

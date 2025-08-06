@@ -1,0 +1,19 @@
+{
+  "home": {
+    "title": "Home Page",
+    "description": "This is the main page of the application.",
+    "welcomeMessage": "Welcome, user!",
+    "settingsButton": "Settings",
+    "profileButton": "Profile",
+    "logoutButton": "Logout"
+  },
+  "general": {
+    "button": {
+      "save": "Save"
+    },
+    "dialog": {
+      "confirm": "Confirm",
+      "cancel": "Cancel"
+    }
+  }
+}
