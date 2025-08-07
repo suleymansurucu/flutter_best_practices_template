@@ -1,10 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_best_practices_template/product/init/application_initialize.dart';
 import 'package:flutter_best_practices_template/product/init/product_localizaiton.dart';
 
 void main() async{
-  WidgetsFlutterBinding.ensureInitialized();
-  await EasyLocalization.ensureInitialized();
+
+
+  ApplicationInitialize.setup().make();
 
   runApp(ProductLocalization(child: const MyApp()));
 }
