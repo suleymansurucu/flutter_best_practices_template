@@ -13,6 +13,8 @@ final class ApplicationInitialize {
   const ApplicationInitialize.setup();
 
   Future<void> make() async {
+    WidgetsFlutterBinding.ensureInitialized();
+
     /// Initializes the application by running the _initialize method in a guarded zone
     /// to catch any errors that may occur during initialization.
     await runZonedGuarded<Future<void>>(_initialize, (error, stack) {
@@ -23,7 +25,6 @@ final class ApplicationInitialize {
 
   /// Initializes the application by ensuring that the EasyLocalization
   Future<void> _initialize() async {
-    WidgetsFlutterBinding.ensureInitialized();
     await EasyLocalization.ensureInitialized();
     EasyLocalization.logger.enableLevels = [];
 
