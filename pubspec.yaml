@@ -52,6 +52,7 @@ dependencies:
   # Utility
   easy_logger: ^0.0.2
   logger: ^2.6.1
+  google_fonts: ^6.3.0
 
   # NetWork
   vexana: ^5.0.3
