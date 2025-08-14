@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_best_practices_template/product/init/config/app_configuration.dart';
-import 'package:flutter_best_practices_template/product/init/config/dev_env.dart';
-import 'package:flutter_best_practices_template/product/init/config/prod_env.dart';
+import 'package:gen/gen.dart';
+
 
 final class AppEnvironment {
 

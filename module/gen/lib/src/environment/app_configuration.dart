@@ -8,5 +8,5 @@ abstract class AppConfiguration {
   // The base URL for the API.
   String get apiKey;
 
-  // Add other configuration properties as needed
+// Add other configuration properties as needed
 }
