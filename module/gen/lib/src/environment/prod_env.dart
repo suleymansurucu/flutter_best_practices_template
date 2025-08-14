@@ -1,9 +1,9 @@
 import 'package:envied/envied.dart';
-import 'package:flutter_best_practices_template/product/init/config/app_configuration.dart';
 
+import 'app_configuration.dart';
 part 'prod_env.g.dart';
 
-@Envied(obfuscate: true, path: 'asset/env/.env.prod')
+@Envied(obfuscate: true, path: 'assets/env/.env.prod')
 final class ProdEnv implements AppConfiguration {
   @EnviedField(varName: 'BASE_URL')
   static final String _baseUrl = _ProdEnv._baseUrl;
