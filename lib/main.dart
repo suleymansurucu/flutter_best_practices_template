@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_best_practices_template/product/init/application_initialize.dart';
+import 'package:flutter_best_practices_template/product/init/navigation/app_router.dart';
 import 'package:flutter_best_practices_template/product/init/product_localizaiton.dart';
 import 'package:flutter_best_practices_template/product/init/theme/custom_dart_theme.dart';
 import 'package:flutter_best_practices_template/product/init/theme/custom_light_theme.dart';
@@ -15,19 +16,19 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  static final _appRouter = AppRouter();
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: _appRouter.config(),
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       title: 'Flutter Demo',
       theme: CustomLightTheme().themeData,
       darkTheme: CustomDartTheme().themeData,
-
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
