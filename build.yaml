@@ -1,0 +1,9 @@
+target:
+ $default:
+  builders:
+  auto_route_generator:auto_route_generator: # this for auto_route package
+    generate_for:
+      - lib/**/**_view.dart
+  auto_route_generator:auto_router_generator: # this for @AutoRouterConfig
+    generate_for:
+     - lib/product/navigation/app_router.dart/
